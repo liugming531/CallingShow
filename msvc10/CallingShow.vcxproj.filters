@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="form">
+      <UniqueIdentifier>{92e18155-d5b9-4949-82f8-29b31767acb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{5dec991d-b16b-4665-8edb-1bc4cb3a33d8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CallingShow.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CallingShow.ico">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CallingShow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CallingShowDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CallRecordDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="AddressListDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalAddressDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageSucessDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageFailDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceHistoryDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceListDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\httprequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\md5.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\tinystr.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\tinyxml.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\loginrequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="CallRecordTitleDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="CallRecordContentDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="ServiceRecordAddDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="LocalAdressAddDialog.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\db.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\getmessagelistrequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordToolbarDlg.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBoxDlg.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTemplateDlg.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageListDlg.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageTemplateInfoDlg.h">
+      <Filter>form</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\sendmsgrequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\getcalllistrequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\util\getlinkerlistrequest.h">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CallingShow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CallingShowDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CallRecordDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="AddressListDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalAddressDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageSucessDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageFailDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceHistoryDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceListDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\httprequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\md5.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\tinystr.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\tinyxml.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\tinyxmlerror.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\tinyxmlparser.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\loginrequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="CallRecordTitleDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="CallRecordContentDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="ServiceRecordAddDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="LocalAdressAddDialog.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\db.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\getmessagelistrequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordToolbarDlg.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBoxDlg.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTemplateDlg.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageListDlg.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageTemplateInfoDlg.cpp">
+      <Filter>form</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\sendmsgrequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\getcalllistrequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\util\getlinkerlistrequest.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CallingShow.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

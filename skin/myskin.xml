@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme version="1.0" xmlns="http://www.uieasy.com"  xsi:schemaLocation="http://www.supereye.com.xsd">
+	<manifest name="default" folder="general" email=""  />
+  <dsfont>
+    <font id="default" 			fontface="Tahoma" fontsize="20" />
+    <font id="default_small" 	fontface="Tahoma" fontsize="11" />
+    <font id="default_bold" 	fontface="Tahoma" fontsize="12" bold="true" />
+    <font id="default_link" 	fontface="Tahoma" fontsize="20" bold="true" underline="true"/>
+  </dsfont>
+  
+  <dsimage>
+  <!--all picture(png bmp  ico and so and) source file link here -->
+  
+  </dsimage>
+	<image id="stardard.login.bk" value="login_bk.png" />
+	<image id="stardard.login.logo" value="login.png" />
+	
+	<image id="normal.button.bk" value="button_bk.png" />
+  <dswindow>
+  
+  <!--µÇÂ¼´°¿Ú-->
+  <window name="login_dlg" type="dialog">
+		<property clipcolor="RGB(255,0,255)" />
+		<dialoginfo bordertop="5" recticon="8,8,16,16" borderbottom="5" borderleft="5" borderright="5" minwidth="400" minheight="300"  captionheight="23" clientstarty="30"/>
+		<image index="0" state="all" picfile="#stardard.login.bk" paintmode="stretchpartall" left_part="11" top_part="88" right_part="11" bottom_part="42" />
+		<!--image index="1" state="all" picfile="#standard.main.ico" left="8" top="8" width="16" height="16"/-->
+		<text state="all" font="#default_bold" left="27" top="8" width="300" height="23" horzalign="left" textcolor="RGB(255,255,255)" />
+		<!--image index="3" state="inactive" picfile="#standard.main.ico" left="8" top="8" width="16" height="16"/-->
+		
+		<image index="0" state="inactive" picfile="#stardard.login.bk" paintmode="stretchparthorz" left_part="11" right_part="11" height="29"/>
+		<text state="inactive" index="2" font="#default_bold" left="27" top="8" width="300" height="23" horzalign="left" textcolor="RGB(216,232,243)" />
+		<!--image index="11" state="inactive" picfile="#standard.main.ico" left="8" top="8" width="16" height="16"/-->
+		<!--image index="12" state="all" picfile="#logindlg.figure.default" left="80" top="60" width="128" height="128"/-->
+		
+		<!--image state="all" picfile="#login.logo" 	top="390" left="80" width="128" height="60" /-->		
+		
+	<windowregion type="clipbycolor">
+		<shape type="rectangle" left="-5" top="0" width="5" height="5" />
+		<shape type="rectangle" left="0" top="0" width="5" height="5" />
+		<shape type="rectangle" left="0" top="-5" width="5" height="5" />
+		<shape type="rectangle" left="-5" top="-5" width="5" height="5" />
+	</windowregion>
+	
+	<sysmenu>
+		<sysbtn name="minimise" left="-76" top="0" width="26" height="18" label="btnSysMin" />
+		<sysbtn name="close" left="-50" top="0" width="43" height="18" label="btnSysClose" />
+	</sysmenu>
+	  
+	</window>
+	
+	
+	 <window name="static" type="static">
+      <property bkcolor="#system_bg" btransparentbk="true" />
+      <text state="all" font="#default" horzalign="left" textcolor="RGB(0,0,0)" />
+    </window>	
+	
+	<window name="login_static" type="static">
+      <property bkcolor="#system_bg" btransparentbk="true" />
+      <image picfile="#stardard.login.logo"/>
+    </window>
+	
+	
+	<window name="button" type="button">
+		<property bclipwindow="true" tooltips="#default" clipcolor="RGB(255,0,255)" cursor="#handcur" height="21"/>
+		<buttoninfo subtype="push" drawfocus="true"  />
+		
+		<image state="normal" picfile="#normal.button.bk" paintmode="stretchparthorz" left_part="4" right_part="4" />
+		<image state="over" picfile="#normal.button.bk" paintmode="stretchparthorz" left_part="4" right_part="4" />
+		<image state="down" picfile="#normal.button.bk" paintmode="stretchparthorz" left_part="4" right_part="4" />
+		<image state="disable" picfile="#normal.button.bk" paintmode="stretchparthorz" left_part="4" right_part="4" />
+		<text state="all" font="#default" horzalign="center" bsingleline="true" textcolor="RGB(0,0,0)" />
+	</window>
+	
+  
+  </dswindow>
+  
+  
+</theme>

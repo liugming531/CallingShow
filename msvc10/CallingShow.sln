@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CallingShow", "CallingShow.vcxproj", "{C6193BB1-85A4-4A21-B395-DD69895B94B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TestProtocol", "..\TestProtocol\TestProtocol.vcxproj", "{7D7E56CB-1FBB-4FB7-9D05-53A36E8B530F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C6193BB1-85A4-4A21-B395-DD69895B94B5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C6193BB1-85A4-4A21-B395-DD69895B94B5}.Debug|Win32.Build.0 = Debug|Win32
+		{C6193BB1-85A4-4A21-B395-DD69895B94B5}.Release|Win32.ActiveCfg = Release|Win32
+		{C6193BB1-85A4-4A21-B395-DD69895B94B5}.Release|Win32.Build.0 = Release|Win32
+		{7D7E56CB-1FBB-4FB7-9D05-53A36E8B530F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{7D7E56CB-1FBB-4FB7-9D05-53A36E8B530F}.Debug|Win32.Build.0 = Debug|Win32
+		{7D7E56CB-1FBB-4FB7-9D05-53A36E8B530F}.Release|Win32.ActiveCfg = Release|Win32
+		{7D7E56CB-1FBB-4FB7-9D05-53A36E8B530F}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

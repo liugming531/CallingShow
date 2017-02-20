@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C6193BB1-85A4-4A21-B395-DD69895B94B5}</ProjectGuid>
+    <RootNamespace>CallingShow</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;..\util;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;libevent.lib;libevent_core.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\util;..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib;libcmtd.lib</IgnoreSpecificDefaultLibraries>
+      <AdditionalLibraryDirectories>..\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libevent.lib;libevent_core.lib;sqlite3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\CallingShow.ico" />
+    <None Include="res\CallingShow.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\util\db.h" />
+    <ClInclude Include="..\util\getcalllistrequest.h" />
+    <ClInclude Include="..\util\getlinkerlistrequest.h" />
+    <ClInclude Include="..\util\getmessagelistrequest.h" />
+    <ClInclude Include="..\util\httprequest.h" />
+    <ClInclude Include="..\util\loginrequest.h" />
+    <ClInclude Include="..\util\md5.h" />
+    <ClInclude Include="..\util\sendmsgrequest.h" />
+    <ClInclude Include="..\util\tinystr.h" />
+    <ClInclude Include="..\util\tinyxml.h" />
+    <ClInclude Include="AddressListDialog.h" />
+    <ClInclude Include="CallingShow.h" />
+    <ClInclude Include="CallingShowDlg.h" />
+    <ClInclude Include="CallRecordContentDialog.h" />
+    <ClInclude Include="CallRecordDialog.h" />
+    <ClInclude Include="CallRecordTitleDialog.h" />
+    <ClInclude Include="DeviceListDialog.h" />
+    <ClInclude Include="LocalAddressDialog.h" />
+    <ClInclude Include="LocalAdressAddDialog.h" />
+    <ClInclude Include="LoginDialog.h" />
+    <ClInclude Include="MessageBoxDlg.h" />
+    <ClInclude Include="MessageFailDialog.h" />
+    <ClInclude Include="MessageListDlg.h" />
+    <ClInclude Include="MessageSucessDialog.h" />
+    <ClInclude Include="MessageTemplateDlg.h" />
+    <ClInclude Include="MessageTemplateInfoDlg.h" />
+    <ClInclude Include="RecordToolbarDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="ServiceHistoryDialog.h" />
+    <ClInclude Include="ServiceRecordAddDialog.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\util\db.cpp" />
+    <ClCompile Include="..\util\getcalllistrequest.cpp" />
+    <ClCompile Include="..\util\getlinkerlistrequest.cpp" />
+    <ClCompile Include="..\util\getmessagelistrequest.cpp" />
+    <ClCompile Include="..\util\httprequest.cpp" />
+    <ClCompile Include="..\util\loginrequest.cpp" />
+    <ClCompile Include="..\util\md5.cpp" />
+    <ClCompile Include="..\util\sendmsgrequest.cpp" />
+    <ClCompile Include="..\util\tinystr.cpp" />
+    <ClCompile Include="..\util\tinyxml.cpp" />
+    <ClCompile Include="..\util\tinyxmlerror.cpp" />
+    <ClCompile Include="..\util\tinyxmlparser.cpp" />
+    <ClCompile Include="AddressListDialog.cpp" />
+    <ClCompile Include="CallingShow.cpp" />
+    <ClCompile Include="CallingShowDlg.cpp" />
+    <ClCompile Include="CallRecordContentDialog.cpp" />
+    <ClCompile Include="CallRecordDialog.cpp" />
+    <ClCompile Include="CallRecordTitleDialog.cpp" />
+    <ClCompile Include="DeviceListDialog.cpp" />
+    <ClCompile Include="LocalAddressDialog.cpp" />
+    <ClCompile Include="LocalAdressAddDialog.cpp" />
+    <ClCompile Include="LoginDialog.cpp" />
+    <ClCompile Include="MessageBoxDlg.cpp" />
+    <ClCompile Include="MessageFailDialog.cpp" />
+    <ClCompile Include="MessageListDlg.cpp" />
+    <ClCompile Include="MessageSucessDialog.cpp" />
+    <ClCompile Include="MessageTemplateDlg.cpp" />
+    <ClCompile Include="MessageTemplateInfoDlg.cpp" />
+    <ClCompile Include="RecordToolbarDlg.cpp" />
+    <ClCompile Include="ServiceHistoryDialog.cpp" />
+    <ClCompile Include="ServiceRecordAddDialog.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CallingShow.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CallingShow.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
